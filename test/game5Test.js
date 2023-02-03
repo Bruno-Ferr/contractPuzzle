@@ -1,5 +1,6 @@
 const { loadFixture } = require('@nomicfoundation/hardhat-network-helpers');
 const { assert } = require('chai');
+const { ethers } = require('hardhat');
 
 describe('Game5', function () {
   async function deployContractAndSetVariables() {

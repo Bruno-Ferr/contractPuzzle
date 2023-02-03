@@ -4,7 +4,7 @@ pragma solidity 0.8.17;
 contract Game4 {
   bool public isWon;
 
-  mapping(address => mapping(address => bool)) nested;
+  mapping(address => mapping(address => bool)) public nested;
 
   function write(address x) external {
     nested[x][msg.sender] = true;
